@@ -1,0 +1,217 @@
+$font-family: "Poppins", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+.product-section {
+  margin: 96px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+
+  font-family: $font-family; // Áp dụng font mặc định cho toàn bộ section
+
+  .left {
+    .left-box {
+      margin-left: 42px;
+      margin-right: 36px;
+      h2 {
+        width: 223px;
+        color: #000000;
+        font-family: Poppins;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 126.5%; /* 35.42px */
+      }
+    }
+
+    .view-more {
+      display: inline-block;
+      color: #727272;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      &:hover {
+        color: #b68a40;
+        border-bottom-color: #b68a40;
+      }
+    }
+  }
+
+  .product-card {
+    background-color: white;
+    width: 280px;
+    background: #f9f9f9;
+
+    border-radius: 8px;
+    text-align: left;
+    width: 280px; // Tăng kích thước để hình ảnh và nội dung hiển thị tốt hơn
+
+    transition: 0.3s ease;
+    font-family: $font-family;
+
+    // &:hover {
+    //     transform: translateY(-5px);
+    //     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    // }
+    .img-card {
+      width: 280px;
+      height: 177px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background-color: #f9f1e7;
+    }
+    img {
+      width: 239px;
+      height: 142px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      transition: 0.3s ease;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    h3 {
+      background-color: white;
+      font-size: 18px;
+      padding-top: 5px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    p {
+      background-color: white;
+      font-size: 16px;
+      font-weight: bold;
+      color: #b68a40; // Nhấn mạnh giá bằng màu vàng nâu
+      padding-top: 5px;
+    }
+
+    .rating {
+      background-color: white;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+      padding-top: 5px;
+      font-size: 14px;
+      color: #666;
+      font-weight: 500;
+
+      .reviews {
+        color: #9f9f9f;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-size: 12px;
+        color: #aaa;
+      }
+
+      span {
+        font-weight: bold;
+        color: #333;
+      }
+    }
+  }
+
+  .right {
+    h2 {
+      color: #000;
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 126.5%; /* 30.36px */
+    }
+    .btn-dropdown {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 242px;
+      height: 39px;
+      flex-shrink: 0;
+      border-radius: 6px;
+      background: #b88e2f;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 126.5%; /* 17.71px */
+    }
+
+    .btn-dropdown svg {
+      width: 20px;
+      height: 11px;
+    }
+  }
+}
+.comparison-table {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 10px;
+  border: 1px solid #ccc;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  padding: 30px;
+}
+
+.header {
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+  color: #000;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 126.5%; /* 35.42px */
+}
+.label {
+  font-weight: bold;
+  padding: 10px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126.5%; /* 25.3px */
+}
+.value {
+  padding: 10px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126.5%; /* 25.3px */
+}
+.btn-primary {
+  border: 1px solid #b88e2f;
+  background: #b88e2f;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background: darken(#b88e2f, 10%);
+}

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./assets/scss/base/images/logo-header.png" alt="">
+      <p>Furino</p>
+    </div>
+    <div class="menu-toggle">
+      <div class="menu">
+        <button class="menu-btn">More ▼</button>
+        <button class="menu-btn">More option ▼</button><button class="menu-btn">More option ▼</button><button
+          class="menu-btn">More option ▼</button>
+
+        <div class="submenu">
+
+          <a href="/index.html">Home</a>
+          <a href="/shop.html">Shop</a>
+          <a href="/blog.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path
+                d="M23.3333 14V8.16669H25.6666V15.1667H23.3333M23.3333 19.8334H25.6666V17.5H23.3333M11.6666 15.1667C14.7816 15.1667 21 16.73 21 19.8334V23.3334H2.33331V19.8334C2.33331 16.73 8.55165 15.1667 11.6666 15.1667ZM11.6666 4.66669C12.9043 4.66669 14.0913 5.15835 14.9665 6.03352C15.8416 6.90869 16.3333 8.09568 16.3333 9.33335C16.3333 10.571 15.8416 11.758 14.9665 12.6332C14.0913 13.5084 12.9043 14 11.6666 14C10.429 14 9.24198 13.5084 8.36682 12.6332C7.49164 11.758 6.99998 10.571 6.99998 9.33335C6.99998 8.09568 7.49164 6.90869 8.36682 6.03352C9.24198 5.15835 10.429 4.66669 11.6666 4.66669ZM11.6666 17.3834C8.20165 17.3834 4.54998 19.0867 4.54998 19.8334V21.1167H18.7833V19.8334C18.7833 19.0867 15.1316 17.3834 11.6666 17.3834ZM11.6666 6.88335C11.0169 6.88335 10.3937 7.14148 9.93424 7.60094C9.47477 8.06041 9.21665 8.68357 9.21665 9.33335C9.21665 9.98313 9.47477 10.6063 9.93424 11.0658C10.3937 11.5252 11.0169 11.7834 11.6666 11.7834C12.3164 11.7834 12.9396 11.5252 13.3991 11.0658C13.8585 10.6063 14.1166 9.98313 14.1166 9.33335C14.1166 8.68357 13.8585 8.06041 13.3991 7.60094C12.9396 7.14148 12.3164 6.88335 11.6666 6.88335Z"
+                fill="black" />
+            </svg>
+            <p>Tài khoản</p>
+          </a>
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path
+                d="M24.5 24.5L19.2663 19.257M22.1666 12.25C22.1666 14.88 21.1219 17.4024 19.2621 19.2621C17.4024 21.1219 14.88 22.1666 12.25 22.1666C9.61992 22.1666 7.09757 21.1219 5.23784 19.2621C3.3781 17.4024 2.33331 14.88 2.33331 12.25C2.33331 9.61992 3.3781 7.09757 5.23784 5.23784C7.09757 3.3781 9.61992 2.33331 12.25 2.33331C14.88 2.33331 17.4024 3.3781 19.2621 5.23784C21.1219 7.09757 22.1666 9.61992 22.1666 12.25V12.25Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <p>Tìm kiếm</p>
+          </a>
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path
+                d="M8.16668 3.5C4.94551 3.5 2.33334 6.08533 2.33334 9.275C2.33334 11.8498 3.35418 17.9608 13.4027 24.1383C13.5827 24.2479 13.7893 24.3058 14 24.3058C14.2107 24.3058 14.4173 24.2479 14.5973 24.1383C24.6458 17.9608 25.6667 11.8498 25.6667 9.275C25.6667 6.08533 23.0545 3.5 19.8333 3.5C16.6122 3.5 14 7 14 7C14 7 11.3878 3.5 8.16668 3.5Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p>Yêu thích </p>
+          </a>
+          <a href="/cart.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path
+                d="M25.2355 19.1926H8.95234L9.76991 17.5273L23.3543 17.5027C23.8137 17.5027 24.2074 17.1746 24.2894 16.7207L26.1707 6.19062C26.2199 5.91445 26.1461 5.63008 25.9656 5.41406C25.8764 5.30775 25.7652 5.22211 25.6396 5.16309C25.514 5.10407 25.377 5.07308 25.2383 5.07227L7.95702 5.01484L7.80937 4.32031C7.7164 3.87734 7.31718 3.55469 6.86328 3.55469H2.63867C2.38267 3.55469 2.13716 3.65638 1.95614 3.8374C1.77513 4.01841 1.67343 4.26393 1.67343 4.51992C1.67343 4.77592 1.77513 5.02143 1.95614 5.20245C2.13716 5.38346 2.38267 5.48516 2.63867 5.48516H6.08124L6.72656 8.55312L8.31523 16.2449L6.26992 19.5836C6.1637 19.727 6.09972 19.8972 6.08523 20.075C6.07073 20.2528 6.10629 20.4312 6.18788 20.5898C6.35195 20.9152 6.68281 21.1203 7.04921 21.1203H8.7664C8.40032 21.6065 8.20258 22.1988 8.20312 22.8074C8.20312 24.3551 9.46093 25.6129 11.0086 25.6129C12.5562 25.6129 13.8141 24.3551 13.8141 22.8074C13.8141 22.1977 13.6117 21.6043 13.2508 21.1203H17.6559C17.2898 21.6065 17.092 22.1988 17.0926 22.8074C17.0926 24.3551 18.3504 25.6129 19.898 25.6129C21.4457 25.6129 22.7035 24.3551 22.7035 22.8074C22.7035 22.1977 22.5012 21.6043 22.1402 21.1203H25.2383C25.7687 21.1203 26.2035 20.6883 26.2035 20.1551C26.2019 19.8994 26.0993 19.6546 25.9179 19.4743C25.7366 19.294 25.4913 19.1927 25.2355 19.1926ZM8.35898 6.91797L24.1035 6.96992L22.5613 15.6051L10.1937 15.627L8.35898 6.91797ZM11.0086 23.6715C10.5328 23.6715 10.1445 23.2832 10.1445 22.8074C10.1445 22.3316 10.5328 21.9434 11.0086 21.9434C11.4844 21.9434 11.8726 22.3316 11.8726 22.8074C11.8726 23.0366 11.7816 23.2564 11.6196 23.4184C11.4575 23.5805 11.2378 23.6715 11.0086 23.6715ZM19.898 23.6715C19.4223 23.6715 19.034 23.2832 19.034 22.8074C19.034 22.3316 19.4223 21.9434 19.898 21.9434C20.3738 21.9434 20.7621 22.3316 20.7621 22.8074C20.7621 23.0366 20.6711 23.2564 20.509 23.4184C20.347 23.5805 20.1272 23.6715 19.898 23.6715Z"
+                fill="black" />
+            </svg>
+            <p>Giỏ hàng </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <ul class="select">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/shop.html">Shop</a></li>
+      <li><a href="/blog.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <div class="option">
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path
+            d="M23.3333 14V8.16669H25.6666V15.1667H23.3333M23.3333 19.8334H25.6666V17.5H23.3333M11.6666 15.1667C14.7816 15.1667 21 16.73 21 19.8334V23.3334H2.33331V19.8334C2.33331 16.73 8.55165 15.1667 11.6666 15.1667ZM11.6666 4.66669C12.9043 4.66669 14.0913 5.15835 14.9665 6.03352C15.8416 6.90869 16.3333 8.09568 16.3333 9.33335C16.3333 10.571 15.8416 11.758 14.9665 12.6332C14.0913 13.5084 12.9043 14 11.6666 14C10.429 14 9.24198 13.5084 8.36682 12.6332C7.49164 11.758 6.99998 10.571 6.99998 9.33335C6.99998 8.09568 7.49164 6.90869 8.36682 6.03352C9.24198 5.15835 10.429 4.66669 11.6666 4.66669ZM11.6666 17.3834C8.20165 17.3834 4.54998 19.0867 4.54998 19.8334V21.1167H18.7833V19.8334C18.7833 19.0867 15.1316 17.3834 11.6666 17.3834ZM11.6666 6.88335C11.0169 6.88335 10.3937 7.14148 9.93424 7.60094C9.47477 8.06041 9.21665 8.68357 9.21665 9.33335C9.21665 9.98313 9.47477 10.6063 9.93424 11.0658C10.3937 11.5252 11.0169 11.7834 11.6666 11.7834C12.3164 11.7834 12.9396 11.5252 13.3991 11.0658C13.8585 10.6063 14.1166 9.98313 14.1166 9.33335C14.1166 8.68357 13.8585 8.06041 13.3991 7.60094C12.9396 7.14148 12.3164 6.88335 11.6666 6.88335Z"
+            fill="black" />
+        </svg>
+      </a>
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path
+            d="M24.5 24.5L19.2663 19.257M22.1666 12.25C22.1666 14.88 21.1219 17.4024 19.2621 19.2621C17.4024 21.1219 14.88 22.1666 12.25 22.1666C9.61992 22.1666 7.09757 21.1219 5.23784 19.2621C3.3781 17.4024 2.33331 14.88 2.33331 12.25C2.33331 9.61992 3.3781 7.09757 5.23784 5.23784C7.09757 3.3781 9.61992 2.33331 12.25 2.33331C14.88 2.33331 17.4024 3.3781 19.2621 5.23784C21.1219 7.09757 22.1666 9.61992 22.1666 12.25V12.25Z"
+            stroke="black" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </a>
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path
+            d="M8.16668 3.5C4.94551 3.5 2.33334 6.08533 2.33334 9.275C2.33334 11.8498 3.35418 17.9608 13.4027 24.1383C13.5827 24.2479 13.7893 24.3058 14 24.3058C14.2107 24.3058 14.4173 24.2479 14.5973 24.1383C24.6458 17.9608 25.6667 11.8498 25.6667 9.275C25.6667 6.08533 23.0545 3.5 19.8333 3.5C16.6122 3.5 14 7 14 7C14 7 11.3878 3.5 8.16668 3.5Z"
+            stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+      <a href="/cart.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path
+            d="M25.2355 19.1926H8.95234L9.76991 17.5273L23.3543 17.5027C23.8137 17.5027 24.2074 17.1746 24.2894 16.7207L26.1707 6.19062C26.2199 5.91445 26.1461 5.63008 25.9656 5.41406C25.8764 5.30775 25.7652 5.22211 25.6396 5.16309C25.514 5.10407 25.377 5.07308 25.2383 5.07227L7.95702 5.01484L7.80937 4.32031C7.7164 3.87734 7.31718 3.55469 6.86328 3.55469H2.63867C2.38267 3.55469 2.13716 3.65638 1.95614 3.8374C1.77513 4.01841 1.67343 4.26393 1.67343 4.51992C1.67343 4.77592 1.77513 5.02143 1.95614 5.20245C2.13716 5.38346 2.38267 5.48516 2.63867 5.48516H6.08124L6.72656 8.55312L8.31523 16.2449L6.26992 19.5836C6.1637 19.727 6.09972 19.8972 6.08523 20.075C6.07073 20.2528 6.10629 20.4312 6.18788 20.5898C6.35195 20.9152 6.68281 21.1203 7.04921 21.1203H8.7664C8.40032 21.6065 8.20258 22.1988 8.20312 22.8074C8.20312 24.3551 9.46093 25.6129 11.0086 25.6129C12.5562 25.6129 13.8141 24.3551 13.8141 22.8074C13.8141 22.1977 13.6117 21.6043 13.2508 21.1203H17.6559C17.2898 21.6065 17.092 22.1988 17.0926 22.8074C17.0926 24.3551 18.3504 25.6129 19.898 25.6129C21.4457 25.6129 22.7035 24.3551 22.7035 22.8074C22.7035 22.1977 22.5012 21.6043 22.1402 21.1203H25.2383C25.7687 21.1203 26.2035 20.6883 26.2035 20.1551C26.2019 19.8994 26.0993 19.6546 25.9179 19.4743C25.7366 19.294 25.4913 19.1927 25.2355 19.1926ZM8.35898 6.91797L24.1035 6.96992L22.5613 15.6051L10.1937 15.627L8.35898 6.91797ZM11.0086 23.6715C10.5328 23.6715 10.1445 23.2832 10.1445 22.8074C10.1445 22.3316 10.5328 21.9434 11.0086 21.9434C11.4844 21.9434 11.8726 22.3316 11.8726 22.8074C11.8726 23.0366 11.7816 23.2564 11.6196 23.4184C11.4575 23.5805 11.2378 23.6715 11.0086 23.6715ZM19.898 23.6715C19.4223 23.6715 19.034 23.2832 19.034 22.8074C19.034 22.3316 19.4223 21.9434 19.898 21.9434C20.3738 21.9434 20.7621 22.3316 20.7621 22.8074C20.7621 23.0366 20.6711 23.2564 20.509 23.4184C20.347 23.5805 20.1272 23.6715 19.898 23.6715Z"
+            fill="black" />
+        </svg>
+      </a>
+    </div>
+  </header>
+  <div style="background-image: url(./assets/scss/base/images/bredcum-detail-img2.png);" class="bredcum-detail">
+    <img style="margin-left: 48%; margin-bottom: -60px;" src="./assets/scss/base/images/logo-header.png" alt="">
+    <li class="bredcum-title">Comparison</li>
+    <ul>
+      <li>Home</li>
+      <li>></li>
+      <li>Product Comparison</li>
+    </ul>
+  </div>
+  <section class="comparison">
+    <div class="product-section">
+      <div class="left">
+        <div class="left-box">
+          <h2>Go to Product page for more Products</h2>
+          <a href="#" class="view-more">View More</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="img-card">
+          <img src="./assets/scss/base/images/c9e9224b3002d53824688ecee9c882c5.png" alt="Asgaard Sofa">
+        </div>
+        <h3>Asgaard Sofa</h3>
+        <p>Rs. 250,000.00</p>
+        <div class="rating">
+          <span>4.7</span>
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 1L13 7L19 7.75L14.88 12.37L16 19L10 16L4 19L5.13 12.37L1 7.75L7 7L10 1Z" fill="#FFC700" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 1L13 7L19 7.75L14.88 12.37L16 19L10 16L4 19L5.13 12.37L1 7.75L7 7L10 1Z" fill="#FFC700" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 1L13 7L19 7.75L14.88 12.37L16 19L10 16L4 19L5.13 12.37L1 7.75L7 7L10 1Z" fill="#FFC700" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 1L13 7L19 7.75L14.88 12.37L16 19L10 16L4 19L5.13 12.37L1 7.75L7 7L10 1Z" fill="#FFC700" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M7.15703 7.0125L0.800781 7.9375L5.40078 12.4188L4.31328 18.75L10.0008 15.7625V1.25L7.15703 7.0125Z"
+                fill="#FFC700" />
+            </svg>
+          </span>
+          <span class="reviews">| 204 Review</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="img-card">
+          <img src="./assets/scss/base/images/anh-product1.png" alt="Outdoor Sofa Set">
+        </div>
+        <h3>Outdoor Sofa Set</h3>
+        <p>Rs. 224,000.00</p>
+        <div class="rating">
+          <span>4.7</span>
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 1L13 7L19 7.75L14.88 12.37L16 19L10 16L4 19L5.13 12.37L1 7.75L7 7L10 1Z" fill="#FFC700" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 1L13 7L19 7.75L14.88 12.37L16 19L10 16L4 19L5.13 12.37L1 7.75L7 7L10 1Z" fill="#FFC700" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 1L13 7L19 7.75L14.88 12.37L16 19L10 16L4 19L5.13 12.37L1 7.75L7 7L10 1Z" fill="#FFC700" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 1L13 7L19 7.75L14.88 12.37L16 19L10 16L4 19L5.13 12.37L1 7.75L7 7L10 1Z" fill="#FFC700" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M7.15703 7.0125L0.800781 7.9375L5.40078 12.4188L4.31328 18.75L10.0008 15.7625V1.25L7.15703 7.0125Z"
+                fill="#FFC700" />
+            </svg>
+          </span>
+          <span class="reviews">| 204 Review</span>
+        </div>
+      </div>
+
+
+      <div class="right">
+        <h2>Add A Product</h2>
+        <button class="btn-dropdown">
+          Choose a Product
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="11" viewBox="0 0 20 11" fill="none">
+            <path d="M1 1L10 9.5L19 1" stroke="white" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="comparison-table">
+      <div class="header">General</div>
+      <div class="header"></div>
+      <div class="header"></div>
+      <div class="header"></div>
+
+      <div class="label">Sales Package</div>
+      <div class="value">1 Sectional Sofa</div>
+      <div class="value">1 Three Seater, 2 Single Seater</div>
+      <div class="value"></div>
+
+      <div class="label">Model Number</div>
+      <div class="value">TFCBULGRBL6SRHS</div>
+      <div class="value">DTUBULGRBL568</div>
+      <div class="value"></div>
+
+      <div class="label">Material</div>
+      <div class="value">Solid Wood</div>
+      <div class="value">Solid Wood</div>
+      <div class="value"></div>
+
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+
+
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+
+
+      <div class="header" style="margin-top: 96px;"> Product </div>
+      <div class="header"></div>
+      <div class="header"></div>
+      <div class="header"></div>
+
+      <div class="label">Sales Package</div>
+      <div class="value">1 Sectional Sofa</div>
+      <div class="value">1 Three Seater, 2 Single Seater</div>
+      <div class="value"></div>
+
+      <div class="label">Model Number</div>
+      <div class="value">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And
+        Wear & Tear In The Natural Course Of Product Usage.</div>
+      <div class="value">DTUBULGRBL568</div>
+      <div class="value"></div>
+
+      <div class="label">Material</div>
+      <div class="value">Solid Wood</div>
+      <div class="value">Solid Wood</div>
+      <div class="value"></div>
+
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+
+
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+
+
+      <div class="header" style="margin-top: 96px;">Dimensions</div>
+      <div class="header"></div>
+      <div class="header"></div>
+      <div class="header"></div>
+
+      <div class="label">Sales Package</div>
+      <div class="value">1 Sectional Sofa</div>
+      <div class="value">1 Three Seater, 2 Single Seater</div>
+      <div class="value"></div>
+
+      <div class="label">Model Number</div>
+      <div class="value">TFCBULGRBL6SRHS</div>
+      <div class="value">DTUBULGRBL568</div>
+      <div class="value"></div>
+
+      <div class="label">Material</div>
+      <div class="value">Solid Wood</div>
+      <div class="value">Solid Wood</div>
+      <div class="value"></div>
+
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+
+
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+
+
+      <div class="header" style="margin-top: 96px;">Warranty</div>
+      <div class="header"></div>
+      <div class="header"></div>
+      <div class="header"></div>
+
+      <div class="label">Sales Package</div>
+      <div class="value">1 Sectional Sofa</div>
+      <div class="value">1 Three Seater, 2 Single Seater</div>
+      <div class="value"></div>
+
+      <div class="label">Model Number</div>
+      <div class="value">TFCBULGRBL6SRHS</div>
+      <div class="value">DTUBULGRBL568</div>
+      <div class="value"></div>
+
+      <div class="label">Material</div>
+      <div class="value">Solid Wood</div>
+      <div class="value">Solid Wood</div>
+      <div class="value"></div>
+
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+
+
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+
+      <div class="label">Configuration</div>
+      <div class="value">L-shaped</div>
+      <div class="value">L-shaped</div>
+      <div class="value"></div>
+
+      <div class="label"></div>
+      <div class="value">
+        <button class="btn-primary">Add To Cart</button>
+      </div>
+      <div class="value">
+        <button class="btn-primary">Add To Cart</button>
+      </div>
+      <div class="value"></div>
+
+
+    </div>
+
+
+
+  </section>
+  <section class="services">
+    <div class="services-i">
+      <div class="service-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+          <g clip-path="url(#clip0_117_1239)">
+            <path
+              d="M57.119 21.2611C56.3273 18.8096 56.6648 15.1295 54.607 12.2881C52.533 9.42425 48.9259 8.61027 46.889 7.12058C44.8736 5.6466 42.9986 2.43906 39.6085 1.33281C36.314 0.25773 32.9451 1.7166 30.333 1.7166C27.7213 1.7166 24.3526 0.257378 21.0575 1.33269C17.668 2.43871 15.7914 5.64695 13.7773 7.12023C11.7427 8.60816 8.13289 9.42437 6.05926 12.2877C4.0032 15.1268 4.3373 18.8153 3.54699 21.261C2.79488 23.5887 0.333008 26.3823 0.333008 30.0002C0.333008 33.6202 2.79207 36.403 3.54699 38.7392C4.33871 41.1907 4.00121 44.8708 6.05902 47.7122C8.13289 50.5762 11.7399 51.39 13.777 52.8798C15.792 54.3536 17.6674 57.5614 21.0575 58.6675C24.3498 59.7419 27.7239 58.2837 30.333 58.2837C32.9384 58.2837 36.3205 59.7403 39.6085 58.6676C42.9982 57.5616 44.8735 54.3541 46.8887 52.8801C48.9233 51.3921 52.5331 50.5759 54.6068 47.7126C56.6629 44.8734 56.3286 41.1852 57.119 38.7393C57.8711 36.4115 60.333 33.6178 60.333 30.0002C60.333 26.3803 57.8745 23.5983 57.119 21.2611ZM52.6587 37.2979C51.7359 40.1543 51.9777 43.3511 50.8105 44.9629C49.6276 46.5961 46.5199 47.3421 44.1219 49.0962C41.7501 50.8307 40.0878 53.5803 38.1545 54.2111C36.3254 54.808 33.3446 53.596 30.3331 53.596C27.2996 53.596 24.3495 54.8106 22.5117 54.2111C20.5786 53.5803 18.9186 50.8326 16.5443 49.0961C14.1604 47.3527 11.035 46.5913 9.85555 44.9627C8.69211 43.3562 8.92473 40.1373 8.0075 37.298C7.10844 34.5161 5.02051 32.1073 5.02051 30.0002C5.02051 27.8909 7.10656 25.4904 8.00727 22.7024C8.93012 19.8461 8.68836 16.6491 9.85555 15.0374C11.0377 13.4052 14.1478 12.6568 16.5443 10.9041C18.9235 9.16398 20.5754 6.42097 22.5114 5.78921C24.339 5.19296 27.3295 6.40433 30.3329 6.40433C33.3719 6.40433 36.3146 5.18886 38.1543 5.78921C40.0872 6.41992 41.7486 9.16867 44.1219 10.9042C46.5054 12.6476 49.631 13.409 50.8105 15.0375C51.9741 16.6443 51.7402 19.8599 52.6585 22.7022V22.7023C53.5576 25.4842 55.6455 27.893 55.6455 30.0002C55.6455 32.1094 53.5595 34.5099 52.6587 37.2979ZM41.131 22.4773C42.0464 23.3927 42.0464 24.8766 41.131 25.7918L29.3998 37.523C28.4845 38.4384 27.0004 38.4382 26.0852 37.523L19.5351 30.9729C18.6198 30.0576 18.6196 28.5736 19.535 27.6584C20.4504 26.7432 21.9345 26.743 22.8495 27.6584L27.7425 32.5512L37.8162 22.4774C38.7316 21.5621 40.2157 21.5621 41.131 22.4773Z"
+              fill="#242424" />
+          </g>
+          <defs>
+            <clipPath id="clip0_117_1239">
+              <rect width="60" height="60" fill="white" transform="translate(0.333008)" />
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="service-text">
+          <p>High Quality</p>
+          <span>crafted from top materials</span>
+        </div>
+      </div>
+      <div class="service-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+          <g clip-path="url(#clip0_117_1239)">
+            <path
+              d="M57.119 21.2611C56.3273 18.8096 56.6648 15.1295 54.607 12.2881C52.533 9.42425 48.9259 8.61027 46.889 7.12058C44.8736 5.6466 42.9986 2.43906 39.6085 1.33281C36.314 0.25773 32.9451 1.7166 30.333 1.7166C27.7213 1.7166 24.3526 0.257378 21.0575 1.33269C17.668 2.43871 15.7914 5.64695 13.7773 7.12023C11.7427 8.60816 8.13289 9.42437 6.05926 12.2877C4.0032 15.1268 4.3373 18.8153 3.54699 21.261C2.79488 23.5887 0.333008 26.3823 0.333008 30.0002C0.333008 33.6202 2.79207 36.403 3.54699 38.7392C4.33871 41.1907 4.00121 44.8708 6.05902 47.7122C8.13289 50.5762 11.7399 51.39 13.777 52.8798C15.792 54.3536 17.6674 57.5614 21.0575 58.6675C24.3498 59.7419 27.7239 58.2837 30.333 58.2837C32.9384 58.2837 36.3205 59.7403 39.6085 58.6676C42.9982 57.5616 44.8735 54.3541 46.8887 52.8801C48.9233 51.3921 52.5331 50.5759 54.6068 47.7126C56.6629 44.8734 56.3286 41.1852 57.119 38.7393C57.8711 36.4115 60.333 33.6178 60.333 30.0002C60.333 26.3803 57.8745 23.5983 57.119 21.2611ZM52.6587 37.2979C51.7359 40.1543 51.9777 43.3511 50.8105 44.9629C49.6276 46.5961 46.5199 47.3421 44.1219 49.0962C41.7501 50.8307 40.0878 53.5803 38.1545 54.2111C36.3254 54.808 33.3446 53.596 30.3331 53.596C27.2996 53.596 24.3495 54.8106 22.5117 54.2111C20.5786 53.5803 18.9186 50.8326 16.5443 49.0961C14.1604 47.3527 11.035 46.5913 9.85555 44.9627C8.69211 43.3562 8.92473 40.1373 8.0075 37.298C7.10844 34.5161 5.02051 32.1073 5.02051 30.0002C5.02051 27.8909 7.10656 25.4904 8.00727 22.7024C8.93012 19.8461 8.68836 16.6491 9.85555 15.0374C11.0377 13.4052 14.1478 12.6568 16.5443 10.9041C18.9235 9.16398 20.5754 6.42097 22.5114 5.78921C24.339 5.19296 27.3295 6.40433 30.3329 6.40433C33.3719 6.40433 36.3146 5.18886 38.1543 5.78921C40.0872 6.41992 41.7486 9.16867 44.1219 10.9042C46.5054 12.6476 49.631 13.409 50.8105 15.0375C51.9741 16.6443 51.7402 19.8599 52.6585 22.7022V22.7023C53.5576 25.4842 55.6455 27.893 55.6455 30.0002C55.6455 32.1094 53.5595 34.5099 52.6587 37.2979ZM41.131 22.4773C42.0464 23.3927 42.0464 24.8766 41.131 25.7918L29.3998 37.523C28.4845 38.4384 27.0004 38.4382 26.0852 37.523L19.5351 30.9729C18.6198 30.0576 18.6196 28.5736 19.535 27.6584C20.4504 26.7432 21.9345 26.743 22.8495 27.6584L27.7425 32.5512L37.8162 22.4774C38.7316 21.5621 40.2157 21.5621 41.131 22.4773Z"
+              fill="#242424" />
+          </g>
+          <defs>
+            <clipPath id="clip0_117_1239">
+              <rect width="60" height="60" fill="white" transform="translate(0.333008)" />
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="service-text">
+          <p>Warranty Protection</p>
+          <span>Over 2 years</span>
+        </div>
+      </div>
+      <div class="service-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+          <g clip-path="url(#clip0_117_1247)">
+            <path
+              d="M56.0149 31.102V3.77976C56.0149 2.80502 55.2247 2.01477 54.2499 2.01477H6.9621C5.98736 2.01477 5.19711 2.80502 5.19711 3.77976V33.2801C4.34568 33.4042 3.51331 33.7347 2.77696 34.2814C0.455644 35.9274 -0.0933855 39.6111 1.85104 41.8828L9.80091 51.5205C14.7219 57.2799 19.9495 57.9855 27.7208 57.9855C34.3898 57.9855 37.3713 58.015 43.1835 56.6906L48.8429 55.337C49.7606 56.6185 51.2175 57.4486 52.8552 57.4486H55.6432C58.4133 57.4486 60.667 55.0745 60.667 52.1562V36.3785C60.6671 33.5921 58.6119 31.3032 56.0149 31.102ZM48.0817 34.7327L45.73 33.5383C41.8634 31.5866 37.3929 31.5143 33.4652 33.3404C32.3936 33.7619 30.0564 35.176 28.8441 35.1287H20.6837C17.9769 35.1287 15.7747 37.3308 15.7747 40.0377V41.3249C15.7595 41.3089 15.7436 41.2937 15.7287 41.2774L9.90128 34.9521C9.54864 34.5693 9.15245 34.249 8.72721 33.992V16.4811H23.1711V22.9511C23.1711 23.9258 23.9613 24.7161 24.9361 24.7161H36.0732C37.048 24.7161 37.8382 23.9258 37.8382 22.9511V16.4811H52.4851V31.1019C50.4229 31.2612 48.7033 32.7365 48.0817 34.7327ZM26.7009 16.4811H34.3081V21.1861H26.7009V16.4811ZM52.485 12.9511H37.8382V5.54475H52.4851V12.9511H52.485ZM34.3083 5.54475V12.9512H26.701V5.54475H34.3083ZM23.1709 5.54475V12.9512H8.72709V5.54475H23.1709ZM42.3643 53.2569C36.9952 54.4866 33.7616 54.4368 27.7842 54.4368C20.4889 54.4368 16.9639 54.3189 12.5242 49.2741L4.57431 39.6365C3.1915 37.8358 5.69613 35.7102 7.3051 37.3436L13.1325 43.6691C14.6726 45.2942 16.6107 46.1886 18.9994 46.2412H35.1559C36.1307 46.2412 36.9209 45.4509 36.9209 44.4762C36.9209 43.5014 36.1307 42.7112 35.1559 42.7112H19.3046V40.0375C19.3046 39.2771 19.9231 38.6584 20.6836 38.6584H28.844C30.6824 38.7901 33.3359 37.255 34.9533 36.5411C37.895 35.1734 41.2433 35.2275 44.1354 36.6873L47.8317 38.5648V51.949L42.3643 53.2569ZM57.1371 52.1561C57.1371 53.1279 56.467 53.9185 55.6433 53.9185H52.8554C52.0317 53.9185 51.3617 53.1279 51.3617 52.1561V36.3785C51.3617 35.4067 52.0318 34.616 52.8554 34.616H55.6433C56.467 34.616 57.1371 35.4066 57.1371 36.3785V52.1561Z"
+              fill="#242424" />
+          </g>
+          <defs>
+            <clipPath id="clip0_117_1247">
+              <rect width="60" height="60" fill="white" transform="translate(0.666992)" />
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="service-text">
+          <p>Free Shipping</p>
+          <span>Order over 150 $</span>
+        </div>
+      </div>
+      <div class="service-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+          <g clip-path="url(#clip0_117_1253)">
+            <path
+              d="M54.6935 23.9628C54.2992 10.6825 43.3741 0 29.9999 0C16.6257 0 5.70059 10.6825 5.30612 23.9628L3.5293 25.7396V37.7898L5.294 39.5545V47.7647C5.294 52.5652 9.19941 56.4706 13.9999 56.4706H16.1858C16.9142 58.5246 18.8758 60 21.1764 60H24.7058C27.0079 60 28.9705 58.5225 29.6978 56.4664C29.7986 56.4681 29.8997 56.4706 29.9999 56.4706C38.522 56.4706 45.6526 50.3981 47.2921 42.3529H51.9073L56.4705 37.7898V25.7396L54.6935 23.9628ZM29.9999 3.52941C40.4741 3.52941 49.1953 11.174 50.8806 21.1765H47.2921C45.6526 13.1313 38.522 7.05882 29.9999 7.05882C21.4778 7.05882 14.3472 13.1313 12.7077 21.1765H9.11918C10.8045 11.174 19.5257 3.52941 29.9999 3.52941ZM43.6708 21.1765C37.9662 21.1594 33.9368 21.5068 30.6147 16.6506L29.0015 14.2926L27.6152 16.7907C25.5952 20.4306 22.8748 21.1765 19.4117 21.1765H16.3289C17.9001 15.0944 23.4337 10.5882 29.9999 10.5882C36.5661 10.5882 42.0997 15.0944 43.6708 21.1765ZM12.3528 38.8235H9.55436L7.05871 36.3279V27.2015L9.55436 24.7059H12.3528V38.8235ZM8.82341 47.7647V42.3529H12.7042C13.3686 45.6441 14.9581 48.6652 17.3129 51.0916C16.8193 51.6191 16.4321 52.2467 16.1858 52.9412H13.9999C11.1455 52.9412 8.82341 50.6191 8.82341 47.7647ZM24.7058 56.4706H21.1764C20.2032 56.4706 19.4117 55.6791 19.4117 54.7059C19.4117 53.7328 20.2032 52.9412 21.1764 52.9412H24.7058C25.6788 52.9412 26.4705 53.7328 26.4705 54.7059C26.4705 55.6791 25.6788 56.4706 24.7058 56.4706ZM44.1175 38.8235C44.1175 46.608 37.7844 52.9412 29.9999 52.9412C29.8987 52.9412 29.7967 52.9392 29.6948 52.9368C28.9652 50.8851 27.0047 49.4118 24.7058 49.4118C21.0822 49.4198 21.14 49.3936 20.6884 49.4352C17.6246 46.7498 15.8822 42.9248 15.8822 38.8235V24.7059H19.4117C22.5348 24.7059 26.3384 24.1909 29.2826 20.6076C33.1673 24.6786 37.9146 24.7059 42.1761 24.7059H44.1175V38.8235ZM52.9411 36.3279L50.4454 38.8235H47.6469V24.7059H50.4454L52.9411 27.2015V36.3279Z"
+              fill="#242424" />
+          </g>
+          <defs>
+            <clipPath id="clip0_117_1253">
+              <rect width="60" height="60" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="service-text">
+          <p>24 / 7 Support</p>
+          <span>Dedicated support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-sections">
+        <section class="brand-section">
+          <h2 class="brand-name">Funiro.</h2>
+          <p class="brand-address">
+            400 University Drive Suite 200 Coral Gables,<br />
+            FL 33134 USA
+          </p>
+        </section>
+
+        <nav class="footer-links">
+          <h3 class="section-title">Links</h3>
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Shop</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="footer-columns">
+          <section class="help-section">
+            <h3 class="section-title">Help</h3>
+            <a href="#" class="help-link">Payment Options</a>
+            <a href="#" class="help-link">Returns</a>
+            <a href="#" class="help-link">Privacy Policies</a>
+          </section>
+
+          <section class="newsletter-section">
+            <h3 class="section-title">Newsletter</h3>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <label class="email-label">Enter Your Email Address</label>
+                <div class="input-underline"></div>
+              </div>
+              <button type="submit" class="subscribe-button">
+                <span>SUBSCRIBE</span>
+                <div class="button-underline"></div>
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="copyright">2023 furino. All rights reverved</p>
+    </div>
+  </footer>
+</body>
+
+</html>
